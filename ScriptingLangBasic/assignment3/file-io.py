@@ -19,16 +19,6 @@ function that can store this list in a file.
 4. Write a function that takes the list of question 1 as an argument and returns 6 different lists,
 one per group (IA-A, IA-B, IR-A, IR-B, IR-C, IR-D).
 
-5. Write a function that takes a student list as an argument and returns a list of grades as floats.
-
-6. Write a function that creates a histogram of the exam results: i.e. count the number of times
-the number 0 occurs, how many times 1 occurs, etc. until 20. Normalize this histogram by
-dividing each counted value with the total number of elements in the list. Print the histogram
-to the shell by putting the percentage of students that received a particular grade in front of
-that grade.
-
-Note: You can also nicely plot histograms by using the pylab library 
-
 """
 
 def readGradesFile(path):
@@ -92,6 +82,4 @@ studentGrade = readStudentGrade(studentData,"Ryan","VAN VOLSEM")
 
 grouped = groubByGrade(studentData)
 
-print(grouped[2])
-
-#saveData(studentData,"output.txt")
+saveData(studentData,"output.txt")
